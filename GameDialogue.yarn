@@ -1,0 +1,328 @@
+title: GameStart
+tags:
+---
+
+===
+title: urMom
+---
+Mother: Good morning, Autumn! 
+Mother: I hope you're feeling a bit better today than you were yesterday.
+Autumn: A bit better, yeah...
+Mother: Well I'm glad to hear that! I know you've been having a bit of a rough time since you came back, but I hope you can find some work soon with that degree of yours!
+Autumn: We'll see about that...
+Autumn: I'm glad to be back though. I missed this place a lot while I was out in the city. It gets lonely out there sometimes.
+Mother: Hey, we're not going anywhere anytime soon, so feel free to stay here as long as you're comfortable, Dear!
+Mother: I think you should maybe try taking it easy today. It seems like you've had a rough couple of days adjusting. Don't worry about the job hunt or all those other big things. Spend some time for yourself!
+Mother: Actually, how about I give you some money so you can get something nice at the mall? I know you used to love going there and having a blast back in the day!
+Autumn: Mom, come on, you know you don't need to give me anything like tha-
+Mother: Oh please Honey, I insist! I want you to have a nice time and not have to worry so much!
+Autumn: (Rolling Eyes and Smiling) Alright, fiiine mom. I appreciate it.
+Mother: Have fun, Autumn, and stay safe!
+Autumn: Mom, you do realize I used to go get food off campus at 3 in the morning, right? I'll be alright at the mall, of all places.
+Mother: Oh, goodness, I don't need to hear about that! Be safe, Darling.
+(You might run into multiple people at the Mall. Be sure to talk to everyone before making a decision!)
+<<disable urmom>>
+===
+title: BullyQuest1
+---
+<<set $choosing to false>>
+Jessica: Oh my god, is that Autumn?!
+Autumn: Oh! Hey guys!
+Trey: Autumn! It's been so long, how've you been? How was college?
+Autumn: Yup, although I'm still trying to figure out if it was worth it... I'm back in town for now though, just staying with my parents for a while til I get things situated, you know?
+Chad: Well, we're glad to have you back here. We missed having you hanging around!
+Jessica: Yeah, we totally have to get back to some of our old antics, we used to have so much fun back in high school. It's been too long!
+Autumn: Hey, actually Autumn, we're not really doing much right now, do you wanna go grab lunch in a bit? We can stop by the food court at the mall with that burger place you used to love!
+-> Sure!
+    Trey: Awesome! We'll see you in a bit then. We've still gotta take care of some stuff, so we'll meet you there.
+    Chad: See you there.
+    Autumn: (Man... I really did miss those guys.)
+    <<Bully1 jessica>>
+    <<set $choosing to true>>
+-> Actually...
+    Trey: Aww, man, are you sure? I know you used to be a bit of a flake back in the day, but I figured you'd still wanna do something for old times sake.
+    Jessica: Yea, come on, Autumn! Have some fun with us!
+    -> Oh, alright.
+        Trey: Awesome! We'll see you in a bit then. We've still gotta take care of some stuff, so we'll meet you there.
+        Chad: See you there.
+        Autumn: (Man... I really did miss those guys.)
+        <<Bully1 jessica>>
+        <<set $choosing to true>>
+    -> I really can't.
+        Chad: Oh fine, it's alright, Autumn. We know that you're busy and stuff, so how about we just catch up another time then. You're not leaving anytime soon, right?
+        Autumn: As of right now, no. We'll see how things all pan out but... I don't really have anything concrete planned for right now, so yeah, I'll be around.
+        Chad: Cool, well then we'll see you around.
+        Autumn: (I do hope I'm able to hang out with them soon. I missed chilling with friends like that...)
+        <<set $choosing to true>>
+-> Let me get back to you on that.
+<<if $choosing>>
+    <<disable jessica>>
+<<endif>>
+===
+title: BullyLunch
+---
+Autumn: Hey guys!
+Everyone: Hi Autumn!
+(Time passes as everyone enjoys thier meal)
+Jessica: Wow, that was delicious.
+Autumn: Yeah, it was just like how I remembered it!
+Chad: Hey Autumn, I hate to put you in this situation, but would you be able to cover for us today? We've been a bit strapped for cash recently, and we'd really appreciate it.
+Trey: Plus, remember all those times we treated you back in the day!
+Autumn: (There's a difference between helping one person out versus three out of nowhere but...)
+Autumn:Sure, yeah! That's okay. I got you guys this time, so don't worry about it.
+Jessica: Thanks a bunch Autumn! Next time, we'll get you something special in return!
+Autumn: (Well, I wish they would've told me that ahead of time... but that's just how they are I suppose.)
+<<nextday jessica>>
+The Next Day...
+<<SecondL jessica>>
+<<disable jessica>>
+===
+title: BullyQuest2
+---
+<<set $choosing2 to false>>
+Jessica: Hey Autumn, what's up?
+Autumn: Oh, nothing much... same old same old for right now. What are you guys up to?
+Chad: We're getting some drinks right now for this sick party some friends of ours are throwing. Gotta come prepared, you feel?
+Autumn:Yea, I definitely get that. Is this in town or something?
+Trey: It's a bit out of the way, but they're gonna be riding over with another friend of ours. I would normally be the designated driver, but I can't make it tonight unfortunately.
+Trey: Actually, Autumn, would you be able to do me a favor?
+Trey: You're good friends with Peepaw over at the bakery, right? I'm scheduled for a late shift there tonight, and I think he would probably believe you more than me if you told him I couldn't make it.
+Trey: Could you tell him that I'm sick and can't make it tonight? If you do, I'd be able to drive, and I could also pick you up too.
+Autumn: Hmm... I'd feel a bit bad. I know he trusts me a lot, but at the same time, it's pretty banal all things considered…
+Trey: Hey, you've got the chance to tag along with us to a party! Come on, it'll be so much fun!
+Jessica: Yeah, you need to get out some more anyway nowadays! I know you're cooped up at home all day, might as well have a good time!
+-> Okay, fine.
+    Trey: Awesome! Peepaw will message me to check in whenever you tell him, so once I get that message I'll get ready and go pick you up! See you later, Autumn!
+    Autumn: (It'll be nice to go to a party again. It's been so long. I just hope Peepaw doesn't find out what really happened...)
+    <<Bully2 jessica>>
+    <<set $choosing2 to true>>
+-> I'd really rather not.
+    Chad: Man... Autumn you're being such a killjoy...
+    Trey: Yea, what's the big deal? You'd be doing me such a huge favor! You owe me!
+    -> Fine. I'll do it.
+        Trey: Awesome! Peepaw will message me to check in whenever you tell him, so once I get that message I'll get ready and go pick you up! See you later, Autumn!
+        Autumn: (It'll be nice to go to a party again. It's been so long. I just hope Peepaw doesn't find out what really happened...)
+        <<Bully2 jessica>>
+        <<set $choosing2 to true>>
+    -> No. I'm not lying for you.
+        Jessica: God, Autumn, you're being so lame. But whatever I guess. Have fun spending the night at home doing nothing.
+        Trey: Whatever…guess we're back to square one then. See you around, Autumn.
+        Autumn: (I feel like such a jerk now... but I can't lie to Peepaw's face like that.)
+        <<set $choosing2 to true>>
+-> Let me get back to you on that.
+<<if $choosing2>>
+    <<disable jessica>>
+<<endif>>
+===
+title: PeepawTalk
+---
+Peepaw: Wow, Autumn! Long time no see!
+Autumn: Hey Peepaw! It's great to see you. When was the last time we saw each other, I feel like it's been forever.
+Peepaw: My memory isn't quite so good these days anymore, but I'm pretty sure it was when you excitedly told me that you couldn't work your part time job here anymore because you had to go to college!
+Peepaw: I assume that's over now that you're back. How does it feel to come back home as a big ol' college graduate?
+Autumn: Oh, it went fine…But hey, listen, I wanted to tell you something actually, about Trey...
+Peepaw: Oh yeah, Trey, he's been working here for a bit now. I didn't know you were friends with him! What's going on?
+Autumn: (...What in the world would be a good reason why I am telling him and he couldn't do it himself...)
+Autumn: Oh, uh, I was over at Trey's house to help his parents with something, and he was apparently feeling pretty under the weather because he didn't really come out of his room to help. I checked in and he asked me to tell you that he wasn't going to be able to make it tonight to his shift.
+Peepaw: Oh, I see. I'm sorry that he's not feeling well, but I really would've preferred it if he had discussed this with me himself instead of sending you to do it. 
+Peepaw: Don't worry about it yourself, I just might have to talk to him whenever he comes back. He's called in sick so many times recently, I don't know if he's quite telling the truth anymore...
+Peepaw: Thanks for letting me know anyways though, and it was great to see you again, Autumn!
+Autumn: It was great to see you too, and I hope to come by again soon!
+Autumn: (God, I feel gross after that. I wonder if he thinks I'm lying too...)
+<<party Peepaw>>
+<<disable Peepaw>>
+===
+title: urMom2
+---
+Mom: Autumn, are you alright? You're looking a bit nervous... Is something going on?
+Autumn: My friends said they were gonna pick me up to go to some stupid party outside of town, but they haven't shown up yet and it's getting late.
+Mom: Oh Honey, are you sure they're not just running late? Have they contacted you at all about it?
+Autumn: Not since earlier today when Trey confirmed he'd be picking me up after I did a favor for him.
+Mom: What favor?
+Autumn: Remember Peepaw from the pretzel shop?
+Autumn: Well, Trey still works there, and he asked if I could tell Peepaw that he was sick so he could drive everyone to this party, and offered me a spot if I did it for him.
+Mom: You did that to Peepaw just so you could go with them to a party? Oh, Autumn... you did that just to hang out with your friends, and they didn't even show up for you? I'm not sure if they're really your friends, Dear...
+Autumn: I... hmm. I don't really know either, Mom.
+Mom: Do you need a hug?
+Autumn: I think so.
+<<nextday urmom>>
+The Next Day...
+<<ThirdL urmom>>
+<<disable urmom>>
+===
+title: FinalQuest
+---
+Juniper: Oh, hey Autumn!
+Autumn: Hi June! Good to see you again!
+Juniper: You too. What are you up to here at the mall?
+Autumn: Nothing much in particular honestly. Maybe I'll go shopping, I really need to pick up some new clothes. I don't even remember the last time I bought a new pair of pants...
+Juniper: Oh, cool! I've been checking out stores for a bit, but if you want I can accompany you and help you pick out stuff!
+Autumn: Yeah, I'd love to-
+Chad: Yo, Autumn!
+<<SpawnIn juniper>>
+Autumn: (Oh lord, here we go...)
+Juniper: Who are these people? They seem to know you.
+Autumn: Just some old friends of mine from high school. I talked to you about them recently, remember?
+Juniper: Oh, those guys...
+Trey: Hey, Autumn! How's it hanging? Who's this you're with today?
+Autumn: Oh, she's just a friend of mine, Juniper!
+Jessica: A friend? I feel like we would've heard of her at this point if she was really a friend of yours. Why are you being so private, Autumn?
+Autumn: I'm not being private, it's just we met recently and have only now just been seeing each other more often.
+Chad: Ooooh, Autumn's seeing someone, huh? How about you tell us about your special friend?
+Autumn: Can you guys just shut up already? I'm just trying to hang out with my friend and you guys are being weird about it.
+Juniper: I should get going anyways... see you in a bit Autumn!
+Autumn: See you soon...
+<<Despawn juniper>>
+Trey: So, Autumn, I wanted to say sorry about the party situation, we ended up not going.
+Autumn: I would've appreciated it if you had told me about it, you guys just kinda left me hanging.
+Trey: Well, we assumed that since you weren't planning on going to begin with that you wouldn't be too upset if it wasn't happening! If it's really got you down, I can repay you since you did me a big favor.
+Autumn: I guess...
+Jessica: Yea, we can go do something fun now if you want! We can go shopping!
+Autumn: (But I was already planning on doing something with Juniper...)
+-> Yeah, okay I'll go with you guys.
+    Chad: Awesome! Let's get going!
+    Autumn: Is it okay if I go find Juniper really quick to let her know that I'm gonna be hanging out with you guys?
+    Jessica: Oh, come on, let's just go, we don't have too much time before the shops close!
+    Autumn: Okay...
+    <<bad juniper>>
+-> Sorry, no. Like I said, I have Plans.
+    Autumn: Sorry, I can't. I already had plans with Juniper for today and I don't want to go back on them.
+    Chad: Wow, I can't believe you'd want to hang out with someone you've only known for a few days over us, your friends you've known your whole life.
+    Jessica: Yea, Autumn. Not cool.
+    Autumn: I'm sorry guys, I just don't want to let her down.
+    Trey: Whatever, Autumn. Go have fun with your new friend, we'll just have fun without you.
+    Autumn: (I'm gonna call up Juniper and tell him I'm done with these guys, and that I'm still on for later.) 
+    <<good juniper>>
+<<disable juniper>>
+===
+title: FinalQuest2
+---
+Juniper: Oh, hey Autumn!
+Autumn: Hi June! Good to see you again!
+Juniper: You too. What are you up to here at the mall?
+Autumn: Nothing much in particular honestly. Maybe I'll go shopping, I really need to pick up some new clothes. I don't even remember the last time I bought a new pair of pants...
+Juniper: Oh, cool! I've been checking out stores for a bit, but if you want I can accompany you and help you pick out stuff!
+Autumn: Yeah, I'd love to-
+Chad: Yo, Autumn!
+<<SpawnIn juniper>>
+Autumn: (Oh lord, here we go...)
+Juniper: Who are these people? They seem to know you.
+Autumn: Just some old friends of mine from high school. I talked to you about them recently, remember?
+Juniper: Oh, those guys...
+Trey: Hey, Autumn! How's it hanging? Who's this you're with today?
+Autumn: Oh, she's just a friend of mine, Juniper!
+Jessica: A friend? I feel like we would've heard of her at this point if she was really a friend of yours. Why are you being so private, Autumn?
+Autumn: I'm not being private, it's just we met recently and have only now just been seeing each other more often.
+Chad: Ooooh, Autumn's seeing someone, huh? How about you tell us about your special friend?
+Autumn: Can you guys just shut up already? I'm just trying to hang out with my friend and you guys are being weird about it.
+Juniper: I should get going anyways... see you in a bit Autumn!
+Autumn: See you soon...
+<<Despawn juniper>>
+Jessica: We can go do something fun now if you want! We can go shopping!
+Autumn: (But I was already planning on doing something with Juniper...)
+-> Yeah, okay I'll go with you guys.
+    Chad: Awesome! Let's get going!
+    Autumn: Is it okay if I go find Juniper really quick to let her know that I'm gonna be hanging out with you guys?
+    Jessica: Oh, come on, let's just go, we don't have too much time before the shops close!
+    Autumn: Okay...
+    <<bad juniper>>
+-> Sorry, no. Like I said, I have Plans.
+    Autumn: Sorry, I can't. I already had plans with Juniper for today and I don't want to go back on them.
+    Chad: Wow, I can't believe you'd want to hang out with someone you've only known for a few days over us, your friends you've known your whole life.
+    Jessica: Yea, Autumn. Not cool.
+    Autumn: I'm sorry guys, I just don't want to let her down.
+    Trey: Whatever, Autumn. Go have fun with your new friend, we'll just have fun without you.
+    Autumn: (I'm gonna call up Juniper and tell him I'm done with these guys, and that I'm still on for later.) 
+    <<good juniper>>
+<<disable juniper>>
+===
+title: JuniperQuest1
+---
+<<set $choosing3 to false>>
+Juniper: Oh my god, hey Autumn!
+Autumn: Oh, hi! I'm glad to see you again Juniper.
+Juniper: Same, I feel like it's been forever since I saw you last. I still remember the good times we had senior year like it was just yesterday! How long are you planning on being back in town?
+Autumn: Well, I think I'm going to be here until further notice... college didn't exactly light the world on fire for me so I'm staying with my parents for a bit to try and get situated and figure out what I wanna do.
+Juniper: Oh, I'm sorry to hear that... I at least hope that you're able to bounce back soon and get back on your feet!
+Autumn: Thanks June, I appreciate that a lot. I hope things are going alright for you here too.
+Juniper: Oh, you know how it is, just same-old same-old for the most part... I still try to keep up with people from high school who are still around. I was actually just on my way to see Peepaw if you remember him at all.
+Autumn: Oh gosh, yeah! I used to work for him a while back…he was such a nice guy.
+Juniper: Yeah, he's still doing well! I was on my way to bring him some flour. Actually, I think Peepaw might really appreciate you going to see him, especially since you used to be close with him. 
+Juniper: If you want, I can give you the flour and you can deliver it if you wanna go meet up with him! No pressure if you don't want to, but I wanna offer the chance!
+-> Good idea! I bet he'd really enjoy the surprise!
+    Juniper: Awesome, here's the bag! I hope you have a nice time meeting up with Peepaw again!
+    Autumn: Thank you! You have a great rest of your day too, and I'll see you around!
+    <<Friend1 juniper>>
+    <<set $choosing3 to true>>
+-> Sorry, I don't have the time right now.
+    Juniper: No worries, I don't want to make your day any busier if you're not feeling it! I hope to see you around soon, Autumn. I wanna try and catch up one of these days!
+    Autumn: Of course, yea! I'll see you later!
+    Autumn: (Gosh, she's so nice... I always wanted to be closer with her back in high school but I just had too much going on. Maybe now's the chance to get to know her better!)
+    <<set $choosing3 to true>>  
+-> Let me get back to you on that.
+<<if $choosing3>>
+    <<disable juniper>>
+<<endif>>
+===
+title: PeePawVist
+---
+Peepaw: Wow! Autumn! Long time no see!
+Autumn: Hey Peepaw! It's great to see you. When was the last time we saw each other, I feel like it's been a long time.
+Peepaw: My memory isn't quite so good these days anymore, but I'm pretty sure it was when you excitedly told me that you couldn't work your part time job here anymore because you had to go to college!
+Peepaw: I assume that's over now that you're back. How does it feel to come back home as a big ol' college graduate?
+Autumn: Oh, it went fine...
+Autumn: Hey Peepaw, actually, I'm here for a reason. I came to help Juniper deliver this flour to you! I met up with her for the first time in a while by accident, and she mentioned you so I wanted to come by and say hello!
+Peepaw: Oh, wonderful! She's so nice, isn't she! Please tell her I said thank you whenever you see her again!
+Autumn: She is very nice, yeah. I hope to see her again soon, we weren't really huge friends back in school but I always wanted to be closer... I hope I run into her again soon.
+Peepaw: I hope so too for you, she's a great person and one you'd definitely be friends with from what I know about you. You take care, Autumn, and tell your mom I said hi!
+Autumn: You too, Peepaw!
+Autumn: (What a nice gentleman... I definitely need to buy some of his pretzels one of these days.)
+<<nextday Peepaw>>
+The Next Day...
+<<SecondL Peepaw>>
+<<disable PeePaw>>
+===
+title: JuniperQuest2
+---
+<<set $choosing4 to false>>
+Autumn: Hey Juniper!
+Juniper: Hey Autumn! How are you doing today?
+Autumn: Good, good. I've been meeting more people around town and stuff so that's been alright, although I'm still kind of in the same boat I was when I first got here... 
+Autumn: How are you holding up?
+Juniper: Just fine, I'm actually not really up to much today. I was planning on maybe grabbing something to eat at the mall, but I don't really want to go just by myself...
+Autumn: I totally understand that, I hate eating out by myself too. Always makes me feel really lonely.
+Juniper: Honestly, Autumn, if you're not doing anything right now, do you want to go grab some lunch at the food court at the mall? I can even cover for you if you want, since Peepaw gave me some cash for that flour delivery!
+-> Totally! I'd love to!
+    Juniper: Awesome! I'm so excited to properly catch up! Meet me at the food court in a bit, and I'll be there!
+    Autumn: Will do!
+    <<Friend2 juniper>>
+    <<set $choosing4 to true>>
+-> Ugh, sorry! I'd love to but I can't right now.
+    Juniper: That's totally fine, Autumn! I might just eat at home then, I've got leftovers anyways! I hope I'll catch you around soon then.
+    Autumn: I hope so too! See you later Juniper!
+    Autumn: I really do hope I see her again soon...
+    <<set $choosing4 to true>>
+-> Let me get back to you on that.
+<<if $choosing4>>
+    <<disable juniper>>
+<<endif>>
+===
+title: JuniperLunch
+---
+Autumn: Hey, June!
+Juniper: Hi, Autumn!
+(Time passes as Autumn and Juniper enjoys thier meal)
+Juniper: So, have you thought at all about any future plans, or are you still trying to figure that stuff out?
+Autumn: I honestly haven't made that much progress... College went okay for me, but I feel like a fish out of water sometimes with how tough the job market is and stuff. I just don't really feel all that confident in myself.
+Juniper: I really do understand that a lot, Autumn. I know you're talented and skilled at what you do though, I really think you should try to get a job somewhere you like soon!
+Autumn: I guess, but I also don't really want to go to a whole new place just after my time in college. That's kind of why I came here anyways, it's familiar and comforting even if there's not really much for me to do here. I've got that friend group here too, but I'm still not 100% sure how much I enjoy being around them anymore.
+Juniper: I get it, but if you're not that happy here, you really should start looking elsewhere. I know you can succeed, Autumn!
+Autumn: Thanks June, that means a lot.
+Juniper: Oh gosh, I think I need to get going, I lost track of time for a bit there! This was a really lovely lunch, Autumn, and sorry if it got a bit too down there for a minute.
+Autumn: No worries, it helped me think about things a lot more and I appreciate it! Hope to see you soon, Juniper.
+Juniper: See ya!
+<<nextday juniper>>
+The Next Day...
+<<ThirdL juniper>>
+<<disable juniper>>
+===
